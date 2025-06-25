@@ -68,7 +68,7 @@ const [isLoading, setIsLoading] = React.useState(false);
   className={`${isSubmitted ? "submitted" : ""} ${isLoading ? "loading" : ""}`}
   disabled={isLoading}
 >
-  {isLoading ? "Sending..." : isSubmitted ? "✔ Form Submitted" : "Send Message"}
+  {isLoading ? "Sending..." : isSubmitted ? "✔ Sent" : "Send Message"}
 </button>
 
           </form>

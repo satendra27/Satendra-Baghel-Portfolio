@@ -28,12 +28,15 @@ const Hero = () => {
           <a className='instagram' href="https://www.instagram.com/Satendra%20baghel" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a>
           <a className='facebook' href="https://www.facebook.com/satendra.baghel.3152130" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i></a>
         </div>
+        <div className='icons'>
+
         <a
           href="/Satendra Baghel (2).pdf"
           className="download-btn"
         >
           <i class="fas fa-download"></i> Download Resume
         </a>
+      </div>
       </div>
 
 

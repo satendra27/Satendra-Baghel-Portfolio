@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Close menu when a link is clicked
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -10,17 +16,35 @@ const Navbar = () => {
         <span>Satendra Baghel</span>
       </div>
 
-      {/* Hamburger Menu */}
-      <input type="checkbox" id="menu-toggle" className="menu-toggle" />
-      <label htmlFor="menu-toggle" className="hamburger">&#9776;</label>
+      {/* Hamburger Icon */}
+      <div
+        className={`hamburger ${menuOpen ? 'open' : ''}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        &#9776;
+      </div>
 
-      <ul className="navbar-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact" style={{color:'black',backgroundColor:'white',padding: '7px 12px',borderRadius:'16px'}}>Contact</a></li>
+      {/* Nav Links */}
+      <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
+        <li><a href="#hero" onClick={handleLinkClick}>Home</a></li>
+        <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
+        <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
+        <li><a href="#experience" onClick={handleLinkClick}>Experience</a></li>
+        <li><a href="#education" onClick={handleLinkClick}>Education</a></li>
+        <li>
+          <a
+            href="#contact"
+            onClick={handleLinkClick}
+            style={{
+              color: 'black',
+              backgroundColor: 'white',
+              padding: '7px 12px',
+              borderRadius: '16px',
+            }}
+          >
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   );

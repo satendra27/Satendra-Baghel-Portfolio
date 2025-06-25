@@ -56,10 +56,9 @@
 }
 
 /* Hidden checkbox */
-.menu-toggle {
-  display: none;
-}
 
+
+/* Responsive layout */
 /* Responsive layout */
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -67,19 +66,20 @@
   }
 
   .navbar-links {
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    background-color: #1e1e2f;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     padding: 1rem 0;
-    display: none;
+    background-color: #1e1e2f;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
   }
 
-  .menu-toggle:checked + .hamburger + .navbar-links {
+  .navbar-links.active {
     display: flex;
   }
 }

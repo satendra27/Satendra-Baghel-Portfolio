@@ -109,8 +109,20 @@
 }
 @media (max-width: 768px) {
   .profile-image {
-    width: 250px;
+    width: 200px;
   }
+  .icons{
+    text-align: center;
+  }
+  .social-icons a{
+    margin-right: 14px;
+  }
+  .social-icons{
+    text-align: center;
+  }
+ .typed-text{
+  font-size: 1.6rem;
+ }
 }
 .hero{
   scroll-margin-top: 73px; /* Adjust this to match your navbar height */
