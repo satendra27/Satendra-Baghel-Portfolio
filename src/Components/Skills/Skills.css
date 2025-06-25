@@ -1,0 +1,65 @@
+.skills-section {
+  background: #0d0d0d;
+  padding: 2rem 2rem;
+  color: white;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00bfff;
+  margin-bottom: 3rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.skill-bar {
+  background: #1e1e2f;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.skill-info i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.skill-info span {
+  flex: 1;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.percentage {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.bar {
+  height: 10px;
+  background: #444;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.filled {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.skills-section{
+  scroll-margin-top: 70px; /* Adjust this to match your navbar height */
+}

@@ -1,0 +1,75 @@
+.education-card-section {
+  padding: 2rem 2rem;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00bfff;
+  margin-bottom: 3rem;
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.education-card {
+  background: #1b1b1b;
+  border: 2px solid #00bfff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.4);
+}
+
+.education-card h3 {
+  color: #ff6600;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-card h4 {
+  font-size: 1rem;
+  color: #00bfff;
+  margin-bottom: 0.3rem;
+}
+
+.edu-duration {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.education-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+.education-card-section{
+  scroll-margin-top: 105px; /* Adjust this to match your navbar height */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-card {
+    width: 90%;
+  }
+}
