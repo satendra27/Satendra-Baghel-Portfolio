@@ -9,7 +9,7 @@ const skills = [
   { name: 'Java', level: 80, icon: 'fa-brands fa-java', color: '#007396' },
   { name: 'Python', level: 85, icon: 'fa-python', color: '#3776AB' },
 { name: 'Machine Learning', level: 80, icon: 'fas fa-brain', color: '#f39c12' },
-{ name: 'Excel', level: 90, icon: 'fas fa-file-excel', color: '#217346' },
+{ name: 'Excel', level: 90, icon: 'fa-file-excel', color: '#217346' },
 { name: 'Power BI', level: 85, icon: 'fa-chart-column', color: '#F2C811' }
 
 

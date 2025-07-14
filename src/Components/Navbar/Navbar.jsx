@@ -26,13 +26,13 @@ const Navbar = () => {
 
       {/* Nav Links */}
       <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
-        <li><a href="#hero" onClick={handleLinkClick}>Home</a></li>
-        <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
-        <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
-        <li><a href="#experience" onClick={handleLinkClick}>Experience</a></li>
-        <li><a href="#education" onClick={handleLinkClick}>Education</a></li>
+        <li><a title='Home' href="#hero" onClick={handleLinkClick}>Home</a></li>
+        <li><a title='Skills' href="#skills" onClick={handleLinkClick}>Skills</a></li>
+        <li><a title='Projects' href="#projects" onClick={handleLinkClick}>Projects</a></li>
+        <li><a title='Experience' href="#experience" onClick={handleLinkClick}>Experience</a></li>
+        <li><a title='Education' href="#education" onClick={handleLinkClick}>Education</a></li>
         <li>
-          <a
+          <a title='Contact'
             href="#contact"
             onClick={handleLinkClick}
             style={{

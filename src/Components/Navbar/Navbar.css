@@ -55,10 +55,6 @@
   color: white;
 }
 
-/* Hidden checkbox */
-
-
-/* Responsive layout */
 /* Responsive layout */
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -83,4 +79,3 @@
     display: flex;
   }
 }
-
